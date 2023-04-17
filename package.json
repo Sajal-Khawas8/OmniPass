@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "npm run development",
-    "development": "cross-env NODE_ENV=development concurrently --kill-others \"npm run client\" \"npm run server\"",
+    "development": "cross-env NODE_ENV=development concurrently --kill-others \"npm run client\" \"npm start\"",
     "client": "vite",
     "server": "node server.cjs",
     "build": "vite build"
