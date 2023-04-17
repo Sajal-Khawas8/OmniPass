@@ -1,0 +1,40 @@
+{
+  "name": "ticketbookingapp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "npm run development",
+    "development": "cross-env NODE_ENV=development concurrently --kill-others \"npm run client\" \"npm run server\"",
+    "client": "vite",
+    "server": "node server.cjs",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@auth0/auth0-react": "^2.0.1",
+    "@sendgrid/mail": "^7.7.0",
+    "axios": "^1.3.5",
+    "clear-cache": "^1.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "html-to-pdfmake": "^2.4.16",
+    "nodemailer": "^6.9.1",
+    "pdfmake": "^0.2.7",
+    "razorpay": "^2.8.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-razorpay": "^1.2.0",
+    "react-router-dom": "^6.9.0",
+    "react-router-hash-link": "^2.4.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "concurrently": "^8.0.1",
+    "cross-env": "^7.0.3",
+    "vite": "^4.1.4"
+  }
+}
